@@ -1,0 +1,32 @@
+h1{
+    color: aquamarine;
+   
+}
+span{
+    background-color: grey;
+}
+
+.abc{
+    color: aqua;
+}
+#z{
+    color: rgb(25, 213, 47);
+}
+
+*{
+
+    background-color: black;
+}
+.div1{
+    display: flex;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+}
