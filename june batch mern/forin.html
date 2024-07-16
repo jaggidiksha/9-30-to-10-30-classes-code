@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for in
+        //for of
+        //for each
+
+        //iterable objects: on which loop can work , eg: array , strings
+        //non-iterable objects: on which the loop doesnot work ,boolean , integer 
+        
+        //for-in: which works on the itrable objects:
+        //syntax
+        // for(varible in object){
+        //     //code block to be executed
+        // }
+
+
+//         const qw={
+//             name:"diksha",
+//             age:20,
+//             gender:"female"
+//         }
+// //to get all the keys
+//         for (let x in qw){
+
+//             console.log(x)
+//         }
+
+//         //to get all the values
+
+//         for(x in qw){
+//             console.log(qw[x])
+//         }
+
+//         qw["phoneno"]=987647987;
+//         console.log(qw)
+//         console.log(qw["name"])
+
+        // const ar=[67,89,67,85,43]
+        // for(let x in ar){
+        //     console.log(x)
+        // }
+
+        // for(let x in ar){
+        //     console.log(ar[x])
+        // }
+
+        //for of : it iterate over the values of the iterable objects 
+        //syntax:
+        //for (varibale of object){
+        //code block to be executed
+        //}
+
+        // const a=[9,"car","bus",78,45]
+        // for (let x of a){
+        //     console.log(x)
+        // }
+
+        //forEach: it is used to perform opeartion on each element of anarray 
+
+        // const ary=[2,3,4,5,6]
+        // ary.forEach(function(x){
+        // console.log(x*2)
+        // })
+
+
+
+        //1
+        //23
+        //456
+        //78910
+
+        let num=1;
+        let output=""
+        for (let i=1;i<=4;i++){
+          for (let j=1;j<=i;j++){
+            output+=num;
+            num++
+          }
+            output+="<br>"
+        }
+  document.write(output)
+    </script>
+</body>
+</html>
