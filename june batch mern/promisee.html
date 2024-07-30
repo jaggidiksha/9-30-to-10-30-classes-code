@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //promise:a promise represents the actual completion or failure of an asynchronous opeartion
+        //es6 
+
+        //promise stages
+        // 1stage                                 2nd stage                   3rdstage
+        //pending                                 //fulfilled               rejected
+        //eg :
+        //you              meet tomo.                    yourfriend
+        //until tomor's day                   //meet                        //due to any reason not able to meet 
+
+
+        //meet : place to meet 
+        //not able to meet : otherday 
+
+                       //promise 
+
+        //resolve()                       //rejected()
+        //then()                              catch()
+
+        //then (), catch() : inbulit js cb
+        
+        //syntax : let prom=new Promise();
+        //new Promise (function(resolve,reject){
+        // if(condition){
+        //     resolve("im success")
+        // }else{
+        //     reject("im fail")
+        // }     
+    //})
+
+
+//     let onfulfilment=(result)=>{
+// console.log(result)
+//     }
+
+// let onrejection=(error)=>{
+// console.log(error)
+// }
+
+
+// prom().then(onfulfilment)
+// prom().catch(onrejection)
+
+
+
+// function prom(complete){
+// return new Promise(function(resolve,reject){
+//     if(complete){
+//         resolve("im success")
+//     }else{
+//         reject("im fail")
+//     }
+
+// })
+
+// }
+
+// let onfulfilment=(result)=>{
+//     console.log(result)
+// }
+
+// let onrejection=(error)=>{
+//     console.log(error)
+// }
+
+// prom(false).then(onfulfilment).catch(onrejection)
+
+let a=Math.random()
+console.log(a)
+
+
+
+    </script>
+</body>
+</html>
