@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="runajax()">click to get the data</button>
+    <script>
+        function runajax(){
+      let xhr=new XMLHttpRequest();
+
+      xhr.open ("GET","myfile.txt","true")
+
+      xhr.onreadystatechange=function(){
+
+        if(this.readyState==4  && this.status==200){
+            document.write(this.responseText)
+        }
+      }
+
+    xhr.send()
+
+        }
+        
+
+    </script>
+    <!--                                      AJAX
+asynchronous javascript xml 
+xml : extensible markup language 
+human readable as well as machine understandable  
+
+we can get the data from other file on the server without page refresh
+
+advantages:
+user better experience 
+interactive 
+save sthe network bandwidth
+
+
+ajax method : XMLHttpRequest();
+xhr()
+
+1 xhr.open ()
+2 xhr.onreadystatechange
+3 xhr.send()
+
+xhr.open ("GET",FILENAME,"true")
+
+//this : whenever i want to refer the previous methods / instances
+
+xhr.onreadystatechange=function(){
+
+if (this.readyState==4 && this.status==200){
+document.write(this.responseText)
+}
+}
+
+
+ C                    R                    U                D
+CREATE               READ                UPDATE           DELETE
+
+POST                 GET                   PUT             DELETE
+
+
+
+
+
+
+-->
+</body>
+</html>
