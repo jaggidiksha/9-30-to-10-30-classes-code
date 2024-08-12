@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return validation()">
+  
+   Username <input type="text" placeholder="enter user name" id="user"><br>
+        <span style="color: red;" id="userr"></span><br>
+
+        Password<input type="password" id="password"><br>
+        <span style="color: red;" id="passwordd"></span>
+     <input type="submit">
+    </form>
+    <script>
+        function validation(){
+           let user= document.getElementById("user").value;
+           let password=document.getElementById("password").value
+           if(user==""){
+            document.getElementById("userr").innerHTML="please enter name";
+            return false;
+           }
+
+           if(user.length<=5 || user.length>=20){
+            document.getElementById("userr").innerHTML="length not valid"
+            return false;
+           }
+
+           if(!isNaN(user)){
+            document.getElementById("userr").innerHTML="only characters are allowed"
+            return false;
+           }
+        }
+    </script>
+    
+</body>
+</html>
