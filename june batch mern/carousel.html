@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="previous()">Previous</button>
+    <img src="https://media.istockphoto.com/id/1026566484/photo/kettle-and-tea-glasses-kala-ghoda-arts-festival-mumbai-maharashtra-india.webp?b=1&s=170667a&w=0&k=20&c=jsEUWKK0nENHYR09HnzPJJlYtLiwzVzyyszj9zoVbLU=" alt="" id="image" height="300px" width="500px">
+    <button onclick="next()">Next</button>
+    <script>
+        currentindex=0
+        images=["https://media.istockphoto.com/id/1654916078/photo/abstract-rough-colorful-multicolored-art-on-canvas.webp?b=1&s=170667a&w=0&k=20&c=RJFBJOXG9TdZAMs76_a7G1W40vbQZqnwXRmh9QceXJA=","https://media.istockphoto.com/id/1382204548/photo/lord-shiva-hindu-god-stock-photo.webp?b=1&s=170667a&w=0&k=20&c=o8IynHJ2VhwIhzQXBR9TJK3wBt-EchouwPNkVNcOh8Q=","https://media.istockphoto.com/id/1026566484/photo/kettle-and-tea-glasses-kala-ghoda-arts-festival-mumbai-maharashtra-india.webp?b=1&s=170667a&w=0&k=20&c=jsEUWKK0nENHYR09HnzPJJlYtLiwzVzyyszj9zoVbLU=","https://media.istockphoto.com/id/157579199/photo/bundi-palace-painting-from-rajasthan-india.webp?b=1&s=170667a&w=0&k=20&c=o7HvUfTVyf9m7q4iAHtShvfol0QgIk_SFknyB9ORMi0="]
+
+        function previous(){
+            currentindex=(currentindex-1+images.length)%images.length
+            updatecarousel()
+        }
+        function next(){
+            currentindex=(currentindex+1)%images.length
+            updatecarousel()
+        }
+        function updatecarousel(){
+            document.getElementById("image").src=images[currentindex]
+        }
+    </script>
+</body>
+</html>
